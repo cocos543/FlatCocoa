@@ -1,2 +1,2 @@
 # FlatDelegate
-The purpose of this library is to simplify the delegate mode code.
+The purpose of this library is to simplify the code of delegate mode.
