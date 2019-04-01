@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ED6F6B7F224C7B9100E062F7 /* UITableView+Flat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F6B7E224C7B9100E062F7 /* UITableView+Flat.swift */; };
-		ED6F6B82224CA28500E062F7 /* Flat多层代理类图.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6F6B81224CA28500E062F7 /* Flat多层代理类图.png */; };
 		EDA96E972243313400EEB88A /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA96E962243313400EEB88A /* DelegateProxy.swift */; };
 		EDA96E992243429100EEB88A /* TestDelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA96E982243429100EEB88A /* TestDelegateProxyType.swift */; };
 		EDAAF86D224A1E1A009F9D29 /* _RX.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAAF86B224A1E1A009F9D29 /* _RX.m */; };
@@ -24,6 +23,7 @@
 		EDCA3AD42251ACD400E9C1F9 /* message forward.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3AD12251ACD400E9C1F9 /* message forward.png */; };
 		EDCA3AD92251BE8100E9C1F9 /* message invoked.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3AD82251BE8100E9C1F9 /* message invoked.png */; };
 		EDCA3ADB2251C0AB00E9C1F9 /* get delegate.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3ADA2251C0AB00E9C1F9 /* get delegate.png */; };
+		EDCA3ADF2252088F00E9C1F9 /* class diagram.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3ADE2252088F00E9C1F9 /* class diagram.png */; };
 		EDCC366B224229BA00A62DF1 /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC366A224229BA00A62DF1 /* DelegateProxyType.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		ED6F6B7E224C7B9100E062F7 /* UITableView+Flat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Flat.swift"; sourceTree = "<group>"; };
-		ED6F6B81224CA28500E062F7 /* Flat多层代理类图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flat多层代理类图.png"; sourceTree = "<group>"; };
 		EDA96E962243313400EEB88A /* DelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxy.swift; sourceTree = "<group>"; };
 		EDA96E982243429100EEB88A /* TestDelegateProxyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDelegateProxyType.swift; sourceTree = "<group>"; };
 		EDAAF86B224A1E1A009F9D29 /* _RX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RX.m; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		EDCA3AD12251ACD400E9C1F9 /* message forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message forward.png"; sourceTree = "<group>"; };
 		EDCA3AD82251BE8100E9C1F9 /* message invoked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message invoked.png"; sourceTree = "<group>"; };
 		EDCA3ADA2251C0AB00E9C1F9 /* get delegate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get delegate.png"; sourceTree = "<group>"; };
+		EDCA3ADE2252088F00E9C1F9 /* class diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "class diagram.png"; sourceTree = "<group>"; };
 		EDCC366A224229BA00A62DF1 /* DelegateProxyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,10 +83,10 @@
 		ED6F6B80224C9CE800E062F7 /* Doc */ = {
 			isa = PBXGroup;
 			children = (
+				EDCA3ADE2252088F00E9C1F9 /* class diagram.png */,
 				EDCA3ADA2251C0AB00E9C1F9 /* get delegate.png */,
 				EDCA3AD82251BE8100E9C1F9 /* message invoked.png */,
 				EDCA3AD12251ACD400E9C1F9 /* message forward.png */,
-				ED6F6B81224CA28500E062F7 /* Flat多层代理类图.png */,
 			);
 			path = Doc;
 			sourceTree = "<group>";
@@ -236,9 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDCA3AD42251ACD400E9C1F9 /* message forward.png in Resources */,
-				ED6F6B82224CA28500E062F7 /* Flat多层代理类图.png in Resources */,
 				EDCA3ADB2251C0AB00E9C1F9 /* get delegate.png in Resources */,
 				EDCA3AD92251BE8100E9C1F9 /* message invoked.png in Resources */,
+				EDCA3ADF2252088F00E9C1F9 /* class diagram.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
