@@ -65,18 +65,18 @@ class RootViewController: UIViewController {
 　　其实整体的代码结构还是挺复杂的, 所以我用了UML的Class Diagram和Sequence Diagram来简化这个描述, 可能有些地方使用的不规范, 我会尽量改进.
 
 ## Class Diagram
-{% img https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/class%20diagram.png %}
+![class_diagram](https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/class%20diagram.png)
 
 ## Sequence Diagram
 
 ### 动态创建代理
-{% img https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/get%20delegate.png %}
+![get delegate](https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/get%20delegate.png)
 
 ### 消息转发
-{% img https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/message%20forward.png %}
+![mesaage forward](https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/message%20forward.png)
 
 ### 用户代码注入
-{% img https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/message%20invoked.png %}
+![invoked](https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/message%20invoked.png)
 
 # 实现原理
 　　这里简述一下实现原理, 相关详细原理我已经用注释的形式放到代码里面了. 首先从类图里我们可以看到为所有NSObject及其子类扩展出flat属性的原理, 就是让NSObject实现FlatCompatible协议, 然后我们在给协议添加一个默认的实现, 这样就可以访问到flat已经falt下定义的方法了.
