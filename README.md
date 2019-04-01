@@ -90,4 +90,5 @@ class RootViewController: UIViewController {
 
 # 未来
 　　当前的FlatCocoa更多的是作为一个源码分析例子去深入了解RxSwift的动态代理实现原理, 所以FlatCocoa的源码我只提供了对UITableViewDelegate.tableView(_:didHighlightRowAt:)方法的Flat化, 其他代码其实格式一样. 还有就是目前不支持返回值不为Void的协议方法, 这个我再想想~
+  
 　　完.😄️
