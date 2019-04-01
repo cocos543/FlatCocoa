@@ -79,9 +79,11 @@ class RootViewController: UIViewController {
 ![invoked](https://raw.githubusercontent.com/cocos543/FlatCocoa/master/FlatCocoa/FlatCocoa/Doc/message%20invoked.png)
 
 # 实现原理
-  这里简述一下实现原理, 相关详细原理我已经用注释的形式放到代码里面了. 首先从类图里我们可以看到为所有NSObject及其子类扩展出flat属性的原理, 就是让NSObject实现FlatCompatible协议, 然后我们在给协议添加一个默认的实现, 这样就可以访问到flat已经falt下定义的方法了.
-  接着我们采用工厂模式, 利用一个比较工厂来动态创建我们的proxy实例, 接着向proxy实例注入我们要代理的方法逻辑(Closure).
-  最后, 被代理的对象一旦有消息发出时, 我们让消息转发到proxy对象里, proxy对象负责处理消息, 它可能是调用上一步注入的Closure, 或者调用被代理对象原始的delegate.
+　　这里简述一下实现原理, 相关详细原理我已经用注释的形式放到代码里面了. 首先从类图里我们可以看到为所有NSObject及其子类扩展出flat属性的原理, 就是让NSObject实现FlatCompatible协议, 然后我们在给协议添加一个默认的实现, 这样就可以访问到flat已经falt下定义的方法了.
+  
+　　接着我们采用工厂模式, 利用一个比较工厂来动态创建我们的proxy实例, 接着向proxy实例注入我们要代理的方法逻辑(Closure).
+  
+　　最后, 被代理的对象一旦有消息发出时, 我们让消息转发到proxy对象里, proxy对象负责处理消息, 它可能是调用上一步注入的Closure, 或者调用被代理对象原始的delegate.
 
 # 缺陷
 　　通过代码我们可以发现, 目前FlatCocoa只能动态代理那些返回值为Void的方法, 这是因为在RxSwift里也是如此, 我暂时还没有想到一个好方法来处理返回值不为Void的方案, 比如可能可以用数组? 容我再思考思考.
